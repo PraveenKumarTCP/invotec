@@ -84,7 +84,7 @@ export default function AboutSection() {
         <div className="relative flex justify-center lg:justify-end" data-aos="fade-left">
 
           {/* Blue Shape (Responsive) */}
-          <div className="absolute 
+          {/* <div className="absolute 
             w-65 h-65 
             sm:w-[320px] sm:h-80
             lg:w-105 lg:h-105 
@@ -93,7 +93,7 @@ export default function AboutSection() {
             -right-6 sm:-right-10 lg:right-0 
             top-0 
             z-0" 
-          />
+          /> */}
 
           {/* Image */}
           <div className="relative z-10 rounded-2xl overflow-hidden shadow-xl 

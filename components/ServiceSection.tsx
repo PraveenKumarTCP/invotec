@@ -41,13 +41,13 @@ export default function ServicesSection() {
             Your Trusted Partner in Advanced ENT Care and Cosmetic Plastic Surgery
           </h2>
 
-          <p className="mt-4 text-gray-600 px-4 leading-relaxed text-sm md:text-base md:px-0">
+          <p className="mt-4 text-gray-600 px-4 leading-relaxed text-sm md:text-base md:px-10">
             Our team of highly skilled ENT specialists and plastic surgeons is dedicated to providing personalized care. With years of experience and a commitment to excellence, we ensure every patient receives the best treatment in a comfortable, caring environment.
           </p>
         </div>
 
         {/* Cards */}
-        <div className="mt-16 grid gap-8 md:grid-cols-3">
+        <div className="mt-16 grid gap-8 md:grid-cols-3 px-10 lg:px-12 xl:px-0">
           {services.map((service, index) => (
             <div
               key={index}
