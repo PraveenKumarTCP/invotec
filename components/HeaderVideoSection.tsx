@@ -4,12 +4,9 @@ import { useState } from "react";
 export default function Hero() {
     const [currentVideoIndex, setCurrentVideoIndex] = useState(0);
 
-
     const bannerVideos = [
-        "https://cdn.clinicalvisuals.com/medical/kap/landingpage/001.webm",
-        "https://cdn.clinicalvisuals.com/medical/kap/landingpage/002.webm",
-        "https://cdn.clinicalvisuals.com/medical/kap/landingpage/003.webm",
-        "https://cdn.clinicalvisuals.com/medical/kap/landingpage/004.webm",
+        "https://cdn.clinicalvisuals.com/medical/invotec/landingvideos/invotec_02.webm",
+        "https://cdn.clinicalvisuals.com/medical/invotec/landingvideos/invotec_01.webm",
     ];
 
     const handleVideoEnd = () => {
