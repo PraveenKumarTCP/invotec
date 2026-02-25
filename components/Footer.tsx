@@ -63,8 +63,8 @@ export default function Footer() {
 
           {/* Quick Links */}
           <div data-aos="fade-up" data-aos-delay="100">
-            <h4 className="text-sky-500 font-medium text-sm">Quick links</h4>
-            <ul className="mt-6 space-y-3 text-sm cursor-pointer">
+            <h4 className="text-sky-500 font-medium text-2xl">Quick links</h4>
+            <ul className="mt-6 space-y-3 text-base cursor-pointer">
               <li className="hover:text-white transition">Products</li>
               <li className="hover:text-white transition">Video Demonstrations</li>
               <li className="hover:text-white transition">Instructions for Use</li>
@@ -78,10 +78,10 @@ export default function Footer() {
 
           {/* Customer Service */}
           <div data-aos="fade-up" data-aos-delay="200">
-            <h4 className="text-sky-500 font-medium text-sm">
+            <h4 className="text-sky-500 font-medium text-2xl">
               Customer Service
             </h4>
-            <ul className="mt-6 space-y-3 text-sm cursor-pointer">
+            <ul className="mt-6 space-y-3 text-base cursor-pointer">
               <li className="hover:text-white transition">Provider Resources</li>
               <li className="hover:text-white transition">Patient Resources</li>
               <li className="hover:text-white transition">Returns</li>
@@ -93,10 +93,10 @@ export default function Footer() {
 
           {/* Events */}
           <div data-aos="fade-up" data-aos-delay="300">
-            <h4 className="text-sky-500 font-medium text-sm">
+            <h4 className="text-sky-500 font-medium text-2xl">
               Events & Meetings
             </h4>
-            <ul className="mt-6 space-y-3 text-sm cursor-pointer">
+            <ul className="mt-6 space-y-3 text-base cursor-pointer">
               <li className="hover:text-white transition">ASAPS</li>
               <li className="hover:text-white transition">AAO-HNSF OTO Expo</li>
               <li className="hover:text-white transition">
@@ -107,11 +107,11 @@ export default function Footer() {
 
           {/* Contact Info */}
           <div data-aos="fade-up" data-aos-delay="400">
-            <h4 className="text-sky-500 font-medium text-sm">
+            <h4 className="text-sky-500 font-medium text-2xl">
               Contact Info
             </h4>
 
-            <div className="mt-6 text-sm space-y-4">
+            <div className="mt-6 text-base space-y-4">
               <div>
                 <p className="text-gray-500">Location</p>
                 <p>

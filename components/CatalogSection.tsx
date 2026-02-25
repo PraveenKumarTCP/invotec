@@ -57,6 +57,16 @@ import { useState } from "react";
 
 export default function CatalogSection() {
     const [categories, setCategories] = useState(services[0]);
+    const [currentVideoIndex, setCurrentVideoIndex] = useState(0);
+
+    const bannerVideos = [
+        "https://cdn.clinicalvisuals.com/medical/invotec/shortclips/invotec_01.webm",
+    ];
+
+    const handleVideoEnd = () => {
+        setCurrentVideoIndex((prevIndex) => (prevIndex + 1) % bannerVideos.length);
+    };
+
   AOSInit();
 
   const handleClick = (id: number) => {
@@ -74,33 +84,50 @@ export default function CatalogSection() {
     <section className="relative w-full">
 
       {/* HERO AREA */}
-      <div className="relative h-105 sm:h-[125 lg:h-150 overflow-hidden">
+      <div className="relative h-105 sm:h-125 lg:h-200 overflow-hidden">
 
         {/* Background Image */}
-        <Image
+        {/* <Image
           src={FooterBg}
           alt="Medical Background"
           fill
           priority
           className="object-cover"
-        />
+        /> */}
+
+              {/* Background Layer (Video in future) */}
+      <div className="absolute inset-0 bg-black">
+        {/* Future video example */}
+        
+         <video
+            key={currentVideoIndex}
+            src={bannerVideos[currentVideoIndex]}
+            autoPlay
+            muted
+            loop
+            playsInline
+            onEnded={handleVideoEnd}
+            className="absolute inset-0 w-full h-full object-cover z-0"
+                ></video>
+       
+      </div>
 
         {/* Overlay */}
-        <div className="absolute inset-0 bg-[#298DBCBF]" />
+        <div className="absolute inset-0 bg-[#298dbc26]" />
 
         {/* Content */}
-        <div 
-        key={categories.title}
-          className="relative z-10 flex flex-col items-center justify-center text-center h-full px-6 animate-fadeIn"
+        <div
+          className="relative z-10 flex flex-col items-center justify-end text-center h-full px-6 animate-fadeIn bottom-10"
           data-aos="fade-up"
         >
           <h1 className="text-white text-2xl sm:text-3xl lg:text-4xl font-semibold">
-            {categories.title}
+            ENT & Cosmetic Surgery Products
           </h1>
 
           <p className="mt-6 max-w-3xl text-white/90 text-sm sm:text-base leading-relaxed">
-            {categories.description}
-
+            We offer a wide range of high-quality ENT and cosmetic surgery products, meticulously designed to deliver unmatched precision, 
+            consistent reliability, and superior clinical outcomes, 
+            empowering healthcare professionals to provide the highest standard of care to their patients.
           </p>
         </div>
       </div>
@@ -110,11 +137,11 @@ export default function CatalogSection() {
         <div className="max-w-300 mx-auto px-0 py-6 flex flex-col lg:flex-row items-center justify-between gap-6">
 
           {/* Categories */}
-          <div className="flex flex-wrap justify-center lg:justify-start gap-6 text-white text-sm">
+          <div className="flex flex-wrap justify-center lg:justify-start gap-6 text-white text-base">
             {categories_data.map((cat, index) => (
               <button
                 key={index}
-                className="hover:opacity-80 transition cursor-pointer"
+                className="hover:opacity-80 transition border-r border-white last:border-0 pr-4 last:pr-0"
                 onClick={() => handleClick(cat.id)}
               >
                 {cat.name}
@@ -123,7 +150,7 @@ export default function CatalogSection() {
           </div>
 
           {/* CTA Button */}
-          <button className="bg-white cursor-pointer text-[#2b86ad] px-8 py-3 rounded-full text-sm font-medium flex items-center gap-2 shadow-md hover:scale-105 transition-all duration-300">
+          <button className="bg-white cursor-pointer text-[#2b86ad] px-8 py-3 text-base rounded-full font-medium flex items-center gap-2 shadow-md hover:scale-105 transition-all duration-300">
             Download our Catalog
             <span>↗</span>
           </button>

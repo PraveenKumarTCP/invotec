@@ -67,11 +67,11 @@ export default function ServicesSection() {
 
               {/* Content */}
               <div className="flex flex-col grow text-center mt-6">
-                <h3 className="text-lg font-semibold text-gray-800">
+                <h3 className="text-2xl font-semibold text-gray-800">
                   {service.title}
                 </h3>
 
-                <p className="mt-4 text-gray-600 text-sm leading-relaxed grow">
+                <p className="mt-4 text-gray-600 text-base leading-relaxed grow">
                   {service.description}
                 </p>
 

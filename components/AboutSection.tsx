@@ -71,7 +71,7 @@ export default function AboutSection() {
 
           {/* CTA */}
           <button className="mt-8 md:mt-10 bg-[#298DBC] hover:bg-sky-700 
-            text-white px-6 py-3 rounded-full text-sm font-medium 
+            text-white px-6 py-3 rounded-full text-base font-medium 
             flex items-center gap-2 transition-transform 
             hover:-translate-y-1 duration-300 cursor-pointer">
             Know More about us

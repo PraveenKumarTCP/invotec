@@ -94,11 +94,11 @@ export default function ExpertSection() {
 
             {/* Content */}
             <div className="mt-5 flex flex-col">
-                <h3 className="text-base sm:text-lg font-semibold text-gray-800">
+                <h3 className="text-2xl font-semibold text-gray-800">
                 {service.title}
                 </h3>
 
-                <p className="mt-3 text-gray-600 text-sm leading-relaxed">
+                <p className="mt-3 text-gray-600 text-base leading-relaxed">
                 {service.description}
                 </p>
 
@@ -124,7 +124,7 @@ export default function ExpertSection() {
 
         </div>
         <div className="flex justify-center mt-20">
-                 <button className="bg-[#298DBC] text-[#] px-8 py-3 rounded-full text-sm font-medium flex items-center gap-2 shadow-md hover:scale-105 transition-all duration-300">
+                 <button className="bg-[#298DBC] text-[#] px-8 py-3 rounded-full text-base font-medium flex items-center gap-2 shadow-md hover:scale-105 transition-all duration-300">
             View All Our Teams
             <span>↗</span>
           </button>

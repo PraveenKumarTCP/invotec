@@ -31,7 +31,7 @@ export default function KnowMore() {
             Are you prepared to place your order with Invotec? We’re here to assist you every step of the way!
           </h2>
 
-          <button className="mt-6 bg-white text-[#298DBC] px-8 py-3 rounded-full text-sm font-medium flex items-center gap-2 shadow-md hover:scale-105 transition-all duration-300">
+          <button className="mt-6 bg-white text-[#298DBC] px-8 py-3 rounded-full text-base font-medium flex items-center gap-2 shadow-md hover:scale-105 transition-all duration-300">
             Contact Us
             <span>↗</span>
           </button>

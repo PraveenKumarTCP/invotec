@@ -49,7 +49,7 @@ export default function Navbar() {
 
         {/* Desktop CTA */}
         <div className="hidden lg:block">
-          <button className="cursor-pointer bg-[#298DBC] hover:bg-sky-600 transition px-6 py-2 rounded-full text-sm font-medium flex items-center gap-2">
+          <button className="cursor-pointer bg-[#298DBC] hover:bg-sky-600 transition px-6 py-2 rounded-full text-base font-medium flex items-center gap-2">
             Contact Us
             <span>↗</span>
           </button>
