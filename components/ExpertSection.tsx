@@ -5,11 +5,12 @@ import { AOSInit } from "./AOSInit";
 import CosmeticSurgery from "./../public/assets/CosmeticSurgery.png"
 import PatientResources from "./../public/assets/PatientResources.png"
 import Providers from "./../public/assets/Providers.png"
-import { Facebook, Linkedin, Mail } from "lucide-react";
+import { Facebook, Linkedin, Mail, PersonStanding } from "lucide-react";
 import NetBackground from "@/public/assets/NetBackground.png";
 import Jeffrey from "@/public/assets/CEO_Jeffery 1.png";
 import Susan from "@/public/assets/Ken Pawlowski 1.png";
 import Scott from "@/public/assets/Hector_salazar 1.png";
+import Avatar from "@/public/assets/avatar.png";
 
 const teams = [
   {
@@ -21,14 +22,14 @@ const teams = [
     facebook: ""
   },
   {
-    title: "Ken Pawlowski",
+    title: "Susan Reece",
     description: "Director of Operations",
     image: Susan,
     linkedin: "",
     facebook: ""
   },
   {
-    title: "Hector Salazar",
+    title: "Scott Aull",
     description: "Director of International Sales",
     image: Scott,
     linkedin: "",
@@ -81,7 +82,13 @@ export default function ExpertSection() {
             {/* Avatar */}
             <div className="relative w-20 h-20 sm:w-24 sm:h-24 md:w-28 md:h-28
                 rounded-full overflow-hidden border-4 border-white shadow-md">
-                <Image
+                  <Image
+                    src={Avatar}
+                    alt={"Avatar"}
+                    fill
+                    className="object-cover"
+                  />
+                {/* <Image
                 src={service.image}
                 alt={service.title}
                 fill
@@ -89,7 +96,7 @@ export default function ExpertSection() {
                 sizes="(max-width: 640px) 80px,
                         (max-width: 768px) 96px,
                         112px"
-                />
+                /> */}
             </div>
 
             {/* Content */}
