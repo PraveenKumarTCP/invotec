@@ -13,7 +13,7 @@ export default function Hero() {
         setCurrentVideoIndex((prevIndex) => (prevIndex + 1) % bannerVideos.length);
     };
   return (
-    <section className="relative w-full h-[calc(100vh-72px)] overflow-hidden">
+    <section className="relative w-full h-screen overflow-hidden">
       
       {/* Background Layer (Video in future) */}
       <div className="absolute inset-0 bg-black">
