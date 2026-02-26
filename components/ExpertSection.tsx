@@ -52,11 +52,11 @@ export default function ExpertSection() {
 
         {/* Header */}
         <div className="text-center max-w-3xl mx-auto">
-        <h2 className="text-xl sm:text-2xl md:text-3xl font-semibold text-gray-800">
+        <h2 className="text-xl sm:text-2xl md:text-3xl font-semibold text-gray-800 animate-fadeIn delay-300">
             Meet Our Expert Team
         </h2>
 
-        <p className="mt-4 text-gray-600 leading-relaxed text-sm sm:text-base">
+        <p className="mt-4 text-gray-600 leading-relaxed text-sm sm:text-base animate-fadeIn delay-400">
             Our team of highly skilled ENT specialists and plastic surgeons is
             dedicated to providing personalized care. With years of experience and
             a commitment to excellence, we ensure every patient receives the best

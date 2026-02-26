@@ -120,11 +120,11 @@ export default function CatalogSection() {
           className="relative z-10 flex flex-col items-center justify-end text-center h-full px-6 animate-fadeIn bottom-10"
           data-aos="fade-up"
         >
-          <h1 className="text-white text-2xl sm:text-3xl lg:text-4xl font-semibold">
+          <h1 className="text-white text-2xl sm:text-3xl lg:text-4xl font-semibold animate-fadeIn delay-200">
             ENT & Cosmetic Surgery Products
           </h1>
 
-          <p className="mt-6 max-w-3xl text-white/90 text-sm sm:text-base leading-relaxed">
+          <p className="mt-6 max-w-3xl text-white/90 text-sm sm:text-base leading-relaxed animate-fadeIn delay-300">
             We offer a wide range of high-quality ENT and cosmetic surgery products, meticulously designed to deliver unmatched precision, 
             consistent reliability, and superior clinical outcomes, 
             empowering healthcare professionals to provide the highest standard of care to their patients.
