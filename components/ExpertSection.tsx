@@ -21,14 +21,14 @@ const teams = [
     facebook: ""
   },
   {
-    title: "Susan Reece",
+    title: "Ken Pawlowski",
     description: "Director of Operations",
     image: Susan,
     linkedin: "",
     facebook: ""
   },
   {
-    title: "Scott Aull",
+    title: "Hector Salazar",
     description: "Director of International Sales",
     image: Scott,
     linkedin: "",
@@ -124,7 +124,7 @@ export default function ExpertSection() {
 
         </div>
         <div className="flex justify-center mt-20">
-                 <button className="bg-[#298DBC] text-[#] px-8 py-3 rounded-full text-base font-medium flex items-center gap-2 shadow-md hover:scale-105 transition-all duration-300">
+                 <button className="bg-[#298DBC] text-[#ffffff] px-8 py-3 rounded-full text-base font-medium flex items-center gap-2 shadow-md hover:scale-105 transition-all duration-300">
             View All Our Teams
             <span>↗</span>
           </button>
