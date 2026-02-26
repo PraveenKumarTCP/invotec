@@ -37,11 +37,11 @@ export default function Hero() {
       {/* Content */}
       <div className="relative z-10 h-full flex items-end justify-center text-center px-6 pb-32">
         <div className="max-w-6xl">
-          <h1 className="text-3xl md:text-4xl font-semibold tracking-tight">
+          <h1 className="text-3xl md:text-4xl font-semibold tracking-tight text-white animate-fadeIn">
             Precision Medical Devices for ENT & Plastic Surgery Excellence
           </h1>
 
-          <p className="mt-6 text-gray-300 text-sm md:text-base leading-relaxed">
+          <p className="mt-6 text-gray-300 text-sm md:text-base leading-relaxed animate-fadeIn delay-200">
             Delivering high-quality instruments, implants, and surgical supplies trusted by healthcare professionals worldwide—backed by decades of expertise for reliable performance and better patient outcomes.
           </p>
         </div>
